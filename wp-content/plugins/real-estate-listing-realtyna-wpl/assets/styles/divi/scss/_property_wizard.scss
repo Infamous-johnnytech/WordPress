@@ -1,0 +1,310 @@
+.wpl_addon_membership_container {
+  ul li {
+    list-style: none;
+  }
+}
+#wpl_dashboard_main_content {
+  .profile-wp .panel-wp .finilize-btn {
+    margin-bottom: 20px;
+  }
+
+  #wpl_dashboard_change_password_form {
+    label {
+      display: inline-block;
+    }
+  }
+}
+.wpl-payment-cnt {
+  form {
+    label {
+      @include for-phone {
+        float: none;
+        text-align: left;
+        display: block;
+        width: 100%;
+      }
+    }
+    .wpl-util-form-row {
+      & > select,
+      & > input {
+        @include for-phone {
+          float: none;
+        }
+      }
+    }
+  }
+}
+.wpl-wp.profile-wp .panel-wp .panel-body {
+  padding: 10px;
+}
+.wpl_property_manager {
+  i {
+    font-style: normal;
+  }
+}
+.pwizard-wp {
+  ul {
+    padding: 0 !important;
+    list-style-type: none !important;
+  }
+  .side-content-wp {
+    input {
+      padding: 2px 5px;
+    }
+    input[type="number"] {
+      border: 1px solid $co-13;
+      height: 30px;
+    }
+    input[type="text"] {
+      width: 60%;
+      @include for-phone {
+        width: 80%;
+      }
+    }
+    select {
+      @include for-phone {
+        height: 30px;
+      }
+    }
+    .chosen-container-single .chosen-single {
+      border-color: $co-13;
+    }
+    .prow-property_types div:first-child {
+      margin-bottom: 20px;
+    }
+    .new-rooms-wp {
+      div {
+        height: 30px;
+      }
+      input {
+        width: 15%;
+        @include for-phone {
+          width: 30%;
+        }
+      }
+      button {
+        height: 30px;
+        @include for-phone {
+          height: 30px;
+        }
+      }
+      select {
+        @include for-phone {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  &.wpl-pwizard-vertical {
+    .sidebar-wp {
+      @include for-phone {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .side-2 {
+        @include for-phone {
+          width: 100% !important;
+        }
+        ul {
+          @include for-phone {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          li {
+            @include for-phone {
+              flex-basis: 33.3333%;
+            }
+            a {
+              @include for-phone {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 60px;
+                border-top: 1px solid rgba(41, 169, 223, 0.3);
+              }
+            }
+            &:first-child {
+              @include for-phone {
+                flex-basis: 50%;
+              }
+              span {
+                @include for-phone {
+                  display: block !important;
+                }
+              }
+            }
+            &:nth-child(2) {
+              @include for-phone {
+                flex-basis: 50%;
+              }
+              a {
+                @include for-phone {
+                  box-shadow: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+      .side-12 {
+        @include for-phone {
+          width: 100% !important;
+          margin-top: 10px;
+        }
+      }
+    }
+    .side-content-wp {
+      .prow-area {
+        input {
+          @include for-phone {
+            width: 75% !important;
+          }
+        }
+        select {
+          @include for-phone {
+            width: 23% !important;
+          }
+        }
+      }
+      .gallary-images-wp > ul > li .actions-wp .action-gal-btn i:after,
+      .video-list-wp > ul > li .actions-wp .action-gal-btn i:after,
+      .attachment-wp > ul > li .actions-wp .action-gal-btn i:after {
+        top: 0;
+      }
+      .video-tabs-wp {
+        ul {
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  &.wpl-pwizard-horizontal {
+    .wpl_c_field_313,
+    .wpl_c_field_312 {
+      @include for-phone {
+        width: 100% !important;
+      }
+    }
+    .wpl-pwizard-next,
+    .wpl-pwizard-prev {
+      padding: 0 20px;
+      @include for-phone {
+        text-align: center;
+      }
+    }
+    .wpl-listing-discard-btn > a {
+      @include for-phone {
+        padding: 0 15px;
+      }
+    }
+    .side-content-wp {
+      .prow-area,
+      .prow-price {
+        input {
+          width: 55%;
+          @include for-phone {
+            width: 70%;
+          }
+        }
+        .chosen-container {
+          min-width: unset;
+        }
+      }
+    }
+    #wpl_listing_discard {
+      @include for-phone {
+        text-align: center;
+        font-weight: bold;
+      }
+      span {
+        @include for-phone {
+          display: block;
+        }
+      }
+    }
+    .wpl-pwizard-btns .finilized > a {
+      @include for-phone {
+        text-align: center;
+        font-weight: bold;
+        padding: 0;
+      }
+
+      &::before {
+        @include for-phone {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+.wpl-wp.pmanager-wp {
+  header h2 {
+    font-family: inherit;
+    font-size: 24px;
+  }
+  .wpl-tabs li {
+    @include for-tablet-sm {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+.properties-wp .propery-wp {
+  @include for-tablet-sm {
+    width: 100%;
+  }
+  .property-image,
+  .info-action-wp {
+    @include for-phone {
+      float: none;
+      width: 100%;
+    }
+  }
+  .property-actions {
+    @include for-phone {
+      position: static;
+    }
+    .change-user-cnt-wp {
+      @include for-phone {
+        float: none;
+        display: block;
+      }
+    }
+  }
+}
+.lm-search-form-wp
+  .pwizard-section
+  .prow
+  .wpl_listing_manager_search_form_element_cnt {
+  @include for-tablet-sm {
+    width: auto;
+    margin-bottom: 5px;
+  }
+  @include for-phone {
+    width: 100%;
+    margin-left: 0;
+  }
+  select {
+    @include for-tablet-sm {
+      width: 100%;
+    }
+  }
+}
+
+.mass-panel-wp .mass-actions-wp {
+  @include for-phone {
+    float: none;
+  }
+  .mass-btn {
+    @include for-tablet-sm {
+      margin-bottom: 5px;
+    }
+    @include for-phone {
+      width: 47%;
+    }
+  }
+}
